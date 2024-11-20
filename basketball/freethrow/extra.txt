@@ -1,0 +1,10 @@
+for trial_number in range(1,126):
+
+    trial_id = str(trial_number).zfill(4)
+
+    with open(f'./data/P0001/BB_FT_P0001_T{trial_id}.json') as json_file:
+        free_throw_data = json.load(json_file)
+        break
+
+
+
